@@ -1,0 +1,152 @@
+#section4 {
+    min-height: 570px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    @media screen and (max-width:1130px) {
+        grid-template-columns: 30% 70%;
+    }
+    @media screen and (max-width:820px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #left {
+        @media screen and (max-width:820px) {
+            display: none;
+        }
+        min-height: 570px;
+        width: 100%;
+        img {
+            height: 570px;
+            width: 100%;
+            object-fit: cover;
+            @media screen and (max-width:820px) {
+                display: none;
+            }
+        }
+    }
+    #right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #inner {
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            h4 {
+                font-size: 2.2rem;
+                font-weight: lighter;
+                @media screen and (max-width:820px) {
+                    text-align: center;
+                    margin-bottom: 30px;
+                 }
+                 @media screen and (max-width:573px) {
+                    font-size: 1.7rem;
+                 }
+                #span-red {
+                    color: #d36a15d1;
+                    font-weight: bold;
+                }
+            }
+            #list {
+                display: flex;
+                flex-direction: column;
+                @media screen and (max-width:573px) {
+                    font-size: 0.8rem;
+                 }
+                p {
+                    margin-top: 12px;
+                    margin-left: 28px;
+                    position: relative;
+                    &::before {
+                        content: "✓";
+                        position: absolute;
+                        color: #e9a873d1;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        left: -30px;
+                        top: -6px;
+                        @media screen and (max-width:573px) {
+                            left: -15px;
+                         }
+                    }
+                    .span-p {
+                        font-weight: bold;
+                    }
+                }
+            }
+            #note {
+                display: flex;
+                margin-top: 20px;
+                @media screen and (max-width:820px) {
+                    justify-content: center;
+                 }
+                 @media screen and (max-width:376px) {
+                    width: 80%;
+                    margin: 0 auto;
+                 }
+                p {
+                    margin-right: 25px;
+                    @media screen and (max-width:573px) {
+                        font-size: 0.8rem;
+                     }
+                     @media screen and (max-width:376px) {
+                        margin-top: 20px;
+                        text-align: center;
+                     }
+                    .span-note {
+                        font-weight: bold;
+                        font-size: 2rem;
+                        @media screen and (max-width:573px) {
+                            font-size: 1.2rem;
+                         }
+                    }
+                }
+            }
+            #buttons {
+                display: flex;
+                margin-top: 20px;
+                @media screen and (max-width:820px) {
+                    justify-content: center;
+                 }
+                button {
+                    height: 46px;
+                    width: 40%;
+                    margin-right: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    &:hover i {
+                        display: flex;
+                    }
+                    p {
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        margin-left: 20px;
+                        display: flex;
+                        justify-content: center;
+                        margin-right: 26px;
+                        width: 60%;
+                        justify-content: center;
+                    }
+                    i {
+                        display: none;
+                    }
+                    
+                }
+                button:nth-child(1) {
+                    color: white;
+                    background-color: #d36a15d1;
+                    border: none;
+                }
+                button:nth-child(2) {
+                    border: 1px solid;
+                }
+
+            }
+        }
+    }
+}

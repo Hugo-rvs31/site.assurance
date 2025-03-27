@@ -1,0 +1,147 @@
+#section7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(to bottom right, rgba(202, 21, 21, 0.596), #da764e98, rgba(223, 174, 13, 0.637), rgba(206, 133, 64, 0.616));
+    padding-top: 80px;
+    padding-bottom: 80px;
+    #inner {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width:450px) {
+            width: 90%;
+         }
+        #div-top {
+            @media screen and (max-width:450px) {
+                width: 100%;
+             }
+            h1 {
+                font-weight: lighter;
+                font-size: 3.3rem;
+                @media screen and (max-width:690px) {
+                    font-size: 2rem;
+                 }
+                 @media screen and (max-width:650px) {
+                    text-align: center;
+                 }
+                 @media screen and (max-width:450px) {
+                    font-size: 1.5rem;
+                 }
+                span {
+                    font-weight: bold;
+                }
+            }
+            h3 {
+                font-weight: lighter;
+                font-size: 2rem;
+                margin-top: 30px;
+                @media screen and (max-width:690px) {
+                    font-size: 1rem;
+                 }
+                 @media screen and (max-width:650px) {
+                    text-align: center;
+                 }
+                 @media screen and (max-width:450px) {
+                    font-size: 0.8rem;
+                 }
+            }
+        }
+        #div-bottom {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width:650px) {
+                align-items: center;
+                justify-content: center;
+             }
+             @media screen and (max-width:450px) {
+                width: 100%;
+             }
+            #colonnes {
+                width: 80%;
+                display: grid;
+                grid-template-columns: 33.33% 33.33% 33.33%;
+                gap: 20px;
+                @media screen and (max-width:650px) {
+                    grid-template-columns: 100%;
+                    grid-template-rows: 33.33% 33.33% 33.33%;
+                    justify-items: center;
+                 }
+                 @media screen and (max-width:450px) {
+                    width: 100%;
+                 }
+                .each {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    i {
+                        font-size: 3rem;
+                        text-align: center;
+                    }
+                    h4 {
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+                    p {
+                        margin-top: 20px;
+                        font-weight: lighter;
+                        text-align: center;
+
+                    }
+                }
+            }
+            #other {
+                margin-top: 40px;
+                @media screen and (max-width:650px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                 }
+                #twitter {
+                    font-weight: bold;
+                    @media screen and (max-width:650px) {
+                        margin-top: 20px;
+                     }
+                }
+                button {
+                    cursor: pointer;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    background-color: transparent;
+                    border-radius: 6px;
+                    border: solid 1px white;
+                    width: 27%;
+                    height: 48px;
+                    margin-top: 27px;
+                    @media screen and (max-width:650px) {
+                        width: 100%;
+                     }
+                    &:hover i {
+                        display: flex;
+                    }
+                    p {
+                        margin-right: 10px;
+                        @media screen and (max-width:1000px) {
+                            margin-right: 0;
+                         }
+                         @media screen and (max-width:650px) {
+                            width: 80%;
+                         }
+                    }
+                    i {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
